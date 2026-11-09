@@ -1,1 +1,96 @@
+# Bài kiểm tra lần 2 — Nhóm 9 — Ứng dụng học sâu trong phát hiện Màng trước võng mạc (ERM) qua ảnh OCT
 
+- Fork: https://github.com/thuyduongnguyen25/hmyt-project· Nhánh: gd5-proposed-model
+- Thành viên (MSSV hoặc alias) và vai trò: 20233741: tất cả mọi việc
+
+## A. Literature Review và research gaps
+
+### A1. Chiến lược tìm kiếm
+| Nguồn (PubMed, Scopus, IEEE Xplore, Google Scholar…) | Từ khóa / truy vấn | Khoảng năm | Số kết quả | Số bài giữ lại |
+|---|---|---|---|---|
+
+Tiêu chí chọn / loại bài:
+- 
+
+### A2. Ma trận y văn (≥ 10 bài, ưu tiên 3–5 năm gần nhất)
+| # | Bài (tác giả, năm) | DOI / link | Dataset (n, nguồn) | Phương pháp | Kết quả chính (metric, giá trị) | Kiểm định ngoài? (có / không) | Hạn chế chính |
+|---|---|---|---|---|---|---|---|
+
+### A3. Research gaps
+| Mã | Khoảng trống (1–2 câu) | Bằng chứng (số # trong A2) | Dự án của nhóm giải quyết bằng cách nào |
+|---|---|---|---|
+| G1 | | | |
+
+### A4. Thẩm định 1 bài quan trọng nhất trong A2 bằng PROBAST+AI
+Bài số #: … · Lý do chọn:
+| Miền | Nguy cơ sai lệch (thấp / cao / không rõ) | Căn cứ (trích dẫn hoặc số trang trong bài) |
+|---|---|---|
+| Người tham gia và nguồn dữ liệu | | |
+| Biến dự báo | | |
+| Kết cục | | |
+| Phân tích | | |
+Tính áp dụng cho bài toán của nhóm:
+
+## B. Kết quả và timeline
+
+### B1. Kết quả hiện có
+| Mô hình | Tập đánh giá (cách chia, n) | Metric chính (giá trị, 95% CI nếu có) | Metric phụ | Nguồn số liệu (file / notebook / W&B) |
+|---|---|---|---|---|
+| Baseline 1 (Mốc 2) | | | | |
+| Mô hình đề xuất (Mốc 3) | | | | |
+
+### B2. Ablation (Mốc 3)
+| Cấu hình (bỏ / đổi thành phần nào) | Metric chính | Chênh lệch so với mô hình đầy đủ | Nguồn |
+|---|---|---|---|
+
+### B3. Đối chiếu với y văn
+So sánh kết quả B1 với 2–3 bài trong A2. Nêu rõ những điểm làm phép so sánh **không công bằng**, nếu có: khác dataset, khác cách chia, khác metric.
+
+### B4. Timeline đến khi hoàn thành
+| Việc | Phụ trách (MSSV / vai trò) | Mốc (M3 tuần 10 · M4 tuần 12 · Final tuần 15) | Ngày dự kiến | Trạng thái (Chưa / Đang / Xong + bằng chứng) |
+|---|---|---|---|---|
+
+### B5. Rủi ro / đang vướng / câu hỏi cho GV
+- 
+
+## C. Tự đánh giá dự án theo Phụ lục FAIR, TRIPOD+AI, PROBAST+AI
+
+### C1. FAIR — dữ liệu
+| Mục | Trả lời | Bằng chứng |
+|---|---|---|
+| Nguồn, phiên bản, ngày tải; checksum file dùng để huấn luyện | | |
+| Giấy phép / DUA, căn cứ được phép dùng | | |
+| Datasheet: quần thể, tiêu chí chọn/loại, định nghĩa và đơn vị biến, giới hạn | | |
+| Không có định danh bệnh nhân | | |
+
+### C2. Hướng dẫn báo cáo
+- Câu hỏi nghiên cứu của nhóm:
+- Hướng dẫn báo cáo phù hợp (TRIPOD+AI / STARD-AI / DECIDE-AI) và lý do (Phụ lục §3.2):
+- Số mục checklist đã đáp ứng / tổng số mục; các mục còn thiếu:
+- Kết cục, nhãn, thời điểm dự đoán T0, các biến có sẵn tại T0:
+
+### C3. PROBAST+AI — tự thẩm định dự án của nhóm
+| Miền | Nguy cơ sai lệch (thấp / cao / không rõ) | Căn cứ trong repo (file, dòng) | Việc sẽ làm để giảm nguy cơ |
+|---|---|---|---|
+| Người tham gia và nguồn dữ liệu | | | |
+| Biến dự báo | | | |
+| Kết cục (chú ý incorporation bias) | | | |
+| Phân tích (chia theo bệnh nhân, fit chỉ trên train, cỡ mẫu, dữ liệu thiếu) | | | |
+Tính áp dụng (quần thể, bối cảnh dùng mô hình):
+
+### C4. Bảng kiểm nhanh (Phụ lục §7)
+| Mục | Đạt / Chưa | Bằng chứng |
+|---|---|---|
+| Datasheet | | |
+| Phiên bản + checksum dữ liệu | | |
+| Không định danh; căn cứ được phép dùng dữ liệu | | |
+| Chọn đúng hướng dẫn báo cáo + checklist đã điền | | |
+| Định nghĩa kết cục, nhãn, T0 | | |
+| Chia theo bệnh nhân; tiền xử lý fit chỉ trên train | | |
+| Mô hình mốc hồi quy logistic (hoặc mốc phù hợp, nêu lý do) | | |
+| AUC + calibration (đường cong, in-the-large, slope) + Brier, kèm 95% CI | | |
+| Cỡ mẫu có đủ không; giới hạn về tính áp dụng | | |
+
+## D. Khai báo dùng AI
+| Công cụ | Dùng cho phần nào | Nhóm đã kiểm chứng lại bằng cách nào |
+|---|---|---|
